@@ -1,0 +1,110 @@
+/* Basic Reset and Typography */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+/* Center content in the hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Takes full viewport height */
+  }
+
+/* Optional: adjust image size if needed */
+.hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+a{
+    color: black;
+    transition: color 0.3s ease-in-out;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: blue; /* Change this to any color you prefer */
+    text-decoration: underline; /* Optional: Adds an underline on hover */
+}
+  
+/* Active (when clicking) */
+a:active {
+    color: darkblue; /* A slightly different color when the link is actively clicked */
+}
+
+/* About Me text styling */
+.about {
+    text-align: left;
+    max-width: 600px;  /* Keeps the text from stretching too wide */
+    margin: 1em 0;     /* Add vertical spacing */
+  }
+
+  .about-list {
+    list-style: disc;     /* or circle, square, none, etc. */
+    padding-left: 20px;   /* indentation from the left */
+    margin-bottom: 1em;   /* space below the list */
+  }
+  
+  
+  
+  header, main, footer {
+    padding: 20px;
+    margin: auto;
+    max-width: 800px;
+  }
+  
+  /* Navigation Links Overlay */
+  .nav-links {
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Gallery for Photos Page */
+  .gallery {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .gallery img {
+    width: calc(33% - 10px);
+    height: auto;
+  }
+  
+  /* Blog Posts Styling */
+  .blog-posts article {
+    margin-bottom: 40px;
+  }
+  
+  /* Publications List Styling */
+  .publications ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .publications li {
+    margin-bottom: 20px;
+  }
+  
