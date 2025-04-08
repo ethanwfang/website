@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <header class="hero">
+    <!-- Calligraphy Image -->
+    <img src="../assets/images/calligraphy.png" alt="Calligraphy" class="calligraphy-image" width="80%">
+    
+    <!-- Main heading -->
+    <h1>ethan fang</h1>
+
+    <!-- About Me text -->
+    <p class="about">
+        Hi, I'm Ethan and I am a 3rd year student at 
+        <span class="education-trigger">Case Western Reserve University studying computer science</span>.
+        Some things I enjoy doing include hiking, 
+        <a href="https://www.youtube.com/watch?v=_WP9Qm_x0e0">tennis</a>, 
+        violin, traveling, and playing with my dog.
+      </p>
+
+      <!-- Education Details Section -->
+      <div class="education-details">
+        <p>I am pursuing a Bachelor of Science in Computer Science with a focus on Artificial Intelligence and Machine Learning. My coursework includes:</p>
+        <ul>
+          <li>Advanced Data Structures and Algorithms</li>
+          <li>Machine Learning and Deep Learning</li>
+          <li>Computer Vision and Natural Language Processing</li>
+          <li>Software Engineering and Systems Design</li>
+        </ul>
+        <p>I am also involved in undergraduate research in the field of machine learning, working on projects related to large language models and computer vision.</p>
+      </div>
+      
+    <p class="about">
+    My interests currently lie in machine learning research, 
+    and some applications into quantitative finance. Some things I've worked on include: LLM extended generation,
+    Q-learned CNN branch selection, and earnings call alpha extraction.
+    </p>
+    
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="photos.html">Photos</a>
+      <a href="blog.html">Blog</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://github.com/ethanwfang" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ethanwfang" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </header>
+  <script>
+    document.querySelector('.education-trigger').addEventListener('click', function() {
+      const details = document.querySelector('.education-details');
+      details.classList.toggle('expanded');
+    });
+  </script>
+</body>
+</html>

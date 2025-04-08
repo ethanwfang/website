@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photos</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <header class="hero">
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="photos.html">Photos</a>
+      <a href="blog.html">Blog</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+
+    <h1>Photos</h1>
+    <main>
+      <!-- Photo Categories Navigation -->
+      <div class="photo-categories">
+        <button class="category-link" data-category="friends">Friends</button>
+        <button class="category-link" data-category="street">Street</button>
+        <button class="category-link" data-category="travel">Travel</button>
+        <button class="category-link" data-category="home">Home</button>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-grid">
+          <!-- Replace these with your actual photos -->
+          <div class="gallery-item" data-category="friends" data-full-res="../assets/images/full/photo1.jpg">
+            <img src="../assets/images/thumbnails/photo1.jpg" alt="Photo 1">
+          </div>
+          <div class="gallery-item" data-category="street" data-full-res="../assets/images/full/photo2.jpg">
+            <img src="../assets/images/thumbnails/photo2.jpg" alt="Photo 2">
+          </div>
+          <div class="gallery-item" data-category="travel" data-full-res="../assets/images/full/photo3.jpg">
+            <img src="../assets/images/thumbnails/photo3.jpg" alt="Photo 3">
+          </div>
+          <!-- Add more gallery items as needed -->
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+          <span class="close">&times;</span>
+          <img class="lightbox-img" src="" alt="">
+          <div class="lightbox-nav">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://github.com/ethanwfang" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ethanwfang" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </header>
+  <script src="../assets/js/gallery.js"></script>
+  <script src="../assets/js/category-filter.js"></script>
+</body>
+</html>
